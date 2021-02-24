@@ -24,6 +24,7 @@ client.on("ready", () => {
     console.log(`Id du bot: ${client.user.id}`.green)
     console.log(`Token du bot: ${client.token}`.red)
     console.log("--------------------------------------".green);
+	console.log(`Utiliser la commande ${config.prefix}mp sur un serveur.`.green)
 });
  
      client.on("message", message => {
