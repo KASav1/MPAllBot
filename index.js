@@ -31,7 +31,7 @@ client.on("ready", () => {
  
         if (message.content === `${config.prefix}mp` && message.author.id === `${config.id}`) {
             if (message.deletable) message.delete();
-            message.guild.members.forEach(member => {
+            message.guild.members.cache.forEach(member => {
                 member.send(`${config.message}`).catch(e => { });
             })
         }
